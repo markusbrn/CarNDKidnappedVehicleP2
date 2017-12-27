@@ -20,8 +20,8 @@
 
 using namespace std;
 
-random_device rd;
-mt19937 gen(rd());
+static random_device rd;
+static mt19937 gen(rd());
 
 void ParticleFilter::init(double x, double y, double theta, double std[]) {
 	num_particles = 500;
